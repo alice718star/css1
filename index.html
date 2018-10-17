@@ -2,39 +2,72 @@
 <html>
     <head>
         <title>My Website</title>
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            h1{
+                font-family: 'Pacifico', cursive;
+            }
+            p{
+                font-family: 'Roboto', sans-serif;
+            }
+            .fa-cc-discover{
+                font-size: 40px;
+                color: #333;
+            }
+            .fa-cc-discover: hover{
+                color: #ff00;
+            }
+            .column {float: left;}
+            #c1 {width: 25%;}
+            #c2 {width: 75%}
+            @media screen and (max-width: 700px) {
+	.column { float: none; }
+	#c1, #c2 { width: 100%; }
+}
+        </style>
     </head>
-        <body>
-            <header>
-                <img src="assets/img/logo.png">
+    <body>
+        <header>
+            <img src="assets/img/logo.png" id="logo">
                 <nav>
                     <ul>
-                    <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html">Home</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </nav>
-            </header>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/5XUGy20HH1I" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        <br>
-        <h1>This Is My Site</h1>
-        <br>
-        <img src="assets/img/bio.jpg">
-        <br><br>
+        </header>
+        <div id ="container">
+            <div class="column" id="c1">col 1</div>
+            <div class="column" id="c2">col 2</div>
+            <a href="https://www.discover.com/"><i class="fa fa-cc-discover" style="font-size:48px;color:red"></i></a>
+            <i class="fa fa-cc-discover" style="font-size:24px"></i>
+<i class="fa fa-cc-discover" style="font-size:36px;"></i>
+<i class="fa fa-cc-discover" style="font-size:48px;color:red"></i>
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/5XUGy20HH1I" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <br>
+            <h1>This Is My Site</h1>
+        <div class = "col">
             
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-        </p>
-        <br><br>
-        <ol>
-            <li>Bikes</li>
-            <li>Cars
+            <img src="assets/img/bio.jpg">
+            <br><br>    
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+            <br><br>
+            <ol>
+                <li>Bikes</li>
+                <li>Cars
                 <ul>
                     <li>SUV</li>
                     <li>Trucks</li>
                 </ul>
-            </li>
-            <li>Boats</li>
-        </ol>
-        <br><br>
-        <table border=1>
+                </li>
+                <li>Boats</li>
+            </ol>
+        </div>
+        
+        <div class="col">
+            <table border=1>
             <tr>
                 <th>Interest</th>
                 <th>Sports</th>
@@ -55,13 +88,16 @@
                 <td>Football</td>
                 <td>Notebook</td>
             </tr>
-        </table>
+            </table>
+        </div>
+                <br style="clear:both;">
         <br><br>
-    </body>
-            <footer>
-                <p>
+        </div>
+        <footer>
+            <p>
                 <a href="index.html">Home</a> |
                 <a href="contact.html">Contact</a>
-                </p>
-            </footer>
+            </p>
+        </footer>
+        </body>
 </html>
